@@ -1,13 +1,8 @@
 [package]
-name = "exercise"
+name = "attempt"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-
-[lib]
-name = "attempt"
-path = "./attempt/src/lib.rs"
-crate-type = ["lib"]
