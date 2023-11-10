@@ -10,6 +10,6 @@ impl From<i32> for Student {
     }
 }
  
- pub fn get_age(s : &Student){
+pub fn get_age(s : &Student){
      println!("{:?}",s.age);
- }
+}

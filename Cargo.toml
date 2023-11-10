@@ -6,8 +6,17 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tasks = {path = "./tasks"}
+
 
 [lib]
 name = "attempt"
 path = "./attempt/src/lib.rs"
 crate-type = ["lib"]
+
+
+[workspace]
+members = [
+    "tasks",
+    "attempt"
+]
