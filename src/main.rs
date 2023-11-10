@@ -1,6 +1,7 @@
 use tasks::course3::bubble::{*};
 use tasks::course4::traffic_light::{Color,TrafficLight};
 use tasks::course4::add_u32::add_u32;
+use tasks::course4::print_area::{*};
 
 
 fn main() {
@@ -17,6 +18,13 @@ fn main() {
     let x = [1,2];
     assert_eq!(add_u32(&x),Some(3));
 
+    //04课第10题 打印图形面积
+    let x = Square{side_len:10.0};
+    let y = Circle{radius:3.4};
+    calculate_area(&x);
+    calculate_area(&y);
+
+    
 
 
 
