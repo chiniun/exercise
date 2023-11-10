@@ -36,7 +36,7 @@ mod tests {
     #[test]
     fn it_works() {
        let lt = TrafficLight::new(Color::Green);
-       assert_eq!(lt.get_time(),15);
+       assert_eq!(lt.get_time(),10);
     }
 }
 

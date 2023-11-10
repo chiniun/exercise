@@ -17,6 +17,27 @@ pub fn bubble(s :&mut Vec<i32>){
 }
 
 
+
+
+
+pub fn trait_bubble<T:Ord + Copy>(s : &mut [T]){
+    let l = s.len();
+    for j in 0..l {
+        for i in 0..(l-j){
+            if i+ 1 >= l{
+                break;
+            }
+            if Ordering::Greater == s[i].cmp(&s[i+1]){
+                let tmp = s[i];
+                s[i] = s[i+1];
+                s[i+1] = tmp; 
+            }
+        }
+    } 
+}
+
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
