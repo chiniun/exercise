@@ -1,4 +1,3 @@
-
 pub enum TrafficLight {
     Green(u32),
     Black,
@@ -6,21 +5,20 @@ pub enum TrafficLight {
 
 pub enum Color {
     Green,
-    Black
+    Black,
 }
 
-
 impl TrafficLight {
-    pub fn new(c :Color) ->Self{
+    pub fn new(c: Color) -> Self {
         match c {
             Color::Green => TrafficLight::Green(10),
-            _ => TrafficLight::Black 
+            _ => TrafficLight::Black,
         }
     }
-    pub fn get_time(self)->u32 {
+    pub fn get_time(self) -> u32 {
         match self {
             TrafficLight::Green(t) => t,
-            TrafficLight::Black =>0,
+            TrafficLight::Black => 0,
         }
         // if let TrafficLight::Green(t) = self  {
         //     t
@@ -35,8 +33,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-       let lt = TrafficLight::new(Color::Green);
-       assert_eq!(lt.get_time(),10);
+        let lt = TrafficLight::new(Color::Green);
+        assert_eq!(lt.get_time(), 10);
     }
 }
-

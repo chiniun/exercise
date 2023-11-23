@@ -10,6 +10,7 @@ version = "0.1.0"
 name = "exercise"
 version = "0.1.0"
 dependencies = [
+ "attempt",
  "tasks",
 ]
 

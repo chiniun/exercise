@@ -7,16 +7,17 @@ edition = "2021"
 
 [dependencies]
 tasks = {path = "./tasks"}
+attempt = {path = "attempt"}
 
 
-[lib]
-name = "attempt"
-path = "./attempt/src/lib.rs"
-crate-type = ["lib"]
+# [lib]
+# name = "attempt"
+# path = "./attempt/src/lib.rs"
+# crate-type = ["lib"]
 
 
-[workspace]
-members = [
-    "tasks",
-    "attempt"
-]
+# [workspace]
+# members = [
+#     #"tasks",
+#     #"attempt"
+# ]
